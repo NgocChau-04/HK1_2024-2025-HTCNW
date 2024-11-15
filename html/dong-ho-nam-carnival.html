@@ -1,0 +1,1069 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng Hồ Nam Carnival</title>
+    <script src="../js/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                "families": ["Muli:300,400,500,600,700", "Roboto:300,400,500,600,700"]
+            },
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+
+    <link href="/frontend/vendors/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+
+    <link href="/frontend/vendors/tether/dist/css/tether.css" rel="stylesheet" type="text/css" />
+    <link href="/frontend/vendors/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css" />
+    <link href="/frontend/vendors/nouislider/distribute/nouislider.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="/frontend/vendors/animate.css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="/frontend/vendors/toastr/build/toastr.css" rel="stylesheet" type="text/css" />
+    <link href="/frontend/vendors/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <link href="/frontend/vendors/socicon/css/socicon.css" rel="stylesheet" type="text/css" />
+    <link href="/frontend/vendors/vendors/line-awesome/css/line-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/frontend/vendors/vendors/flaticon/css/flaticon.css" rel="stylesheet" type="text/css" />
+    <link href="/frontend/vendors/vendors/metronic/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="/frontend/vendors/vendors/fontawesome5/css/all.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="/frontend/assets/demo/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/frontend/assets/demo/base/frontend_v2.css" rel="stylesheet" type="text/css" />
+    <link media="all" type="text/css" rel="stylesheet" href="../css/swiper.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../css/owl.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script src="../js/swiper-bundle.min.js"></script>
+
+    <meta name="csrf-token" content="4tfMrIRkZnMeMcHYRWf7Zwu4apCkqK9GXcWC81JT" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <style>
+        body {
+            background: #ebebeb;
+        }
+
+        .swiper-collection .swiper-slide {
+            padding: 1px
+        }
+
+        .card-img-top {
+            border-radius: 0;
+        }
+    </style>
+
+    <meta property="og:image" content="/public/assets/img/donghopho.jpeg" />
+
+    <meta property="og:description" content="Đồng Hồ Phố là thương hiệu bán lẻ và đại lý phân phối đồng hồ chính hãng từ những quốc gia tên tuổi hàng đầu trên thế giới về sản xuất đồng hồ đeo tay như Thuỵ Sỹ, Đức, Hoa Kỳ, Nhật Bản..." />
+
+    <meta property="og:title" content="ĐỒNG HỒ PHỐ - GIÁ TRỊ TẠO NIỀM TIN" />
+
+   
+    <!--end::Page Vendors Styles -->
+    <link rel="shortcut icon" href="/assets/img/fav.png" />
+    <title> Trang chủ
+    </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="../js/gtag1.js"></script>
+    <script async src="../js/gtag2.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2EQG6897LJ');
+        gtag('config', 'AW-693937118');
+    </script>
+    <style>
+        body {
+           font-family: Arial, sans-serif;
+           margin: 0; 
+           padding: 0;
+       }
+       .header {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 10px 50px;
+           background-color: white;
+           position: sticky;
+           top: 0;               
+           z-index: 1000;  
+       }
+       .header-left, .header-center, .header-right {
+           display: flex;
+           align-items: center;
+       }
+       .header-left div, .header-center div, .header-right div {
+           margin-right: 20px;
+       }
+       .header-left i, .header-right i {
+           color: #d4af37;
+           margin-right: 5px;
+       }
+       .header-left div, .header-right div {
+           text-align: center;
+       }
+       .header-left div span, .header-right div span {
+           display: block;
+       }
+       .header-center img {
+           height: 80px;
+       }
+       .header-center div {
+           font-size: 14px;
+           color: #d4af37;
+       }
+       .nav {
+           display: flex;
+           justify-content: center;
+           background-color: white;
+           padding: 10px 0;
+           border-top: 1px solid #d4af37;
+           position: sticky;
+           top: 100px;
+           z-index: 999; 
+       }
+       .nav a {
+           margin: 0 25px; /* Increased margin for wider spacing */
+           text-decoration: none;
+           color: black;
+           font-weight: bold;
+           font-size: 14px;
+           position: relative;
+       }
+       .nav a.active {
+           color: #d4af37;
+       }
+       .nav .dropdown {
+           position: relative;
+           display: inline-block;
+       }
+       .nav .dropdown-content {
+           display: none;
+           position: absolute;
+           background-color: white;
+           min-width: 160px;
+           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+           z-index: 1;
+       }
+       .nav .dropdown-content a {
+           color: black;
+           padding: 12px 16px;
+           text-decoration: none;
+           display: block;
+           text-align: left;
+       }
+       .nav .dropdown-content a:hover {
+           background-color: #f1f1f1;
+       }
+       .nav .dropdown:hover .dropdown-content {
+           display: block;
+       }
+       .search-bar {
+           display: flex;
+           align-items: center;
+           border: 1px solid #d4af37;
+           border-radius: 5px;
+           padding: 5px;
+       }
+       .search-bar input {
+           border: none;
+           outline: none;
+           padding: 5px;
+       }
+       .search-bar button {
+           background-color: #d4af37;
+           border: none;
+           padding: 5px 10px;
+           cursor: pointer;
+       }
+       .search-bar button i {
+           color: white;
+       }
+
+       .product-name {
+    font-family: 'Arial', sans-serif; /* Chọn font bạn muốn */}
+
+   </style>
+</head>
+<body class="m-page--wide m-header--fixed m-header--fixed-mobile m-footer--push m-aside--offcanvas-default">
+
+    <!-- begin:: Page -->
+    <div class="m-grid m-grid--hor m-grid--root m-page">
+
+        <!-- begin::Header -->
+        <div class="header">
+            <div class="header-left">
+             <a href="../html/trang-chu.html"><img alt="Logo of the watch store" height="80" src="../img/gioithieu/LOGO.jpg" width="80"/></a>
+             <div>
+              <i class="fas fa-map-marker-alt">
+              </i>
+              <span>
+               HỆ THỐNG CỬA HÀNG
+              </span>
+             </div>
+             <div>
+              <i class="fas fa-headset">
+              </i>
+              <span>
+               HỖ TRỢ KHÁCH HÀNG
+              </span>
+              <span>
+               0961 345 888
+              </span>
+             </div>
+            </div>
+            <div class="header-right">
+             <div class="search-bar">
+              <input placeholder="Tìm kiếm thương hiệu" type="text"/>
+              <button>
+               <i class="fas fa-search">
+               </i>
+              </button>
+             </div>
+             <div>
+              <i class="fas fa-shopping-cart fa-2x">
+              </i>
+             </div>
+             <div>
+                <i class="fas fa-user fa-2x" id="user-icon" style="cursor: pointer;">
+                </i>
+               
+             </div>
+             <!-- Modal hiển thị thông tin người dùng -->
+<div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="userModalLabel">Thông Tin Người Dùng</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-striped">
+                    <tr>
+                        <td>Họ và Tên:</td>
+                        <td id="modal-hoten"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td id="modal-email"></td>
+                    </tr>
+                    <tr>
+                        <td>Số Điện Thoại:</td>
+                        <td id="modal-sodt"></td>
+                    </tr>
+                    <tr>
+                        <td>Tài Khoản:</td>
+                        <td id="modal-username"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="width: 100px;">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    // Lấy dữ liệu người dùng từ localStorage và hiển thị trong modal
+    function loadUserData() {
+        const user = JSON.parse(localStorage.getItem('user'));
+        
+        if (user) {
+            document.getElementById('modal-hoten').innerText = user.hoten || "N/A";
+            document.getElementById('modal-email').innerText = user.email || "N/A";
+            document.getElementById('modal-sodt').innerText = user.sodt || "N/A";
+            document.getElementById('modal-username').innerText = user.username || "N/A";
+        }
+    }
+
+    // Hiển thị modal khi bấm vào biểu tượng user
+   // Hiển thị modal mà không có lớp phủ
+document.getElementById('user-icon').addEventListener('click', function () {
+    loadUserData();
+    var myModal = new bootstrap.Modal(document.getElementById('userModal'), {
+        backdrop: false // Không hiển thị lớp phủ
+    });
+    myModal.show();
+});
+
+</script>
+
+<!-- Bootstrap CSS and JS (Link trực tiếp hoặc từ CDN) -->
+             <div>
+                <button id="logout-btn" style="border: 1px solid #d4af37;">Đăng xuất</button>
+             </div>
+           
+             
+            </div>
+           </div>
+           <div class="nav">
+            <a class="active" href="../html/trang-chu.html">
+             TRANG CHỦ
+            </a>
+            <a href="../html/gioi-thieu.html">
+             GIỚI THIỆU
+            </a>
+            <div class="dropdown">
+             <a href="../html/san-pham.html">
+              SẢN PHẨM &#9662;
+             </a>
+             <div class="dropdown-content">
+              <a href="../html/dong-ho-nam.html">
+               ĐỒNG HỒ NAM
+              </a>
+              <a href="../html/dong-ho-nu.html">
+               ĐỒNG HỒ NỮ
+              </a>
+             </div>
+            </div>
+            <a href="../html/tin-tuc.html">
+             TIN TỨC
+            </a>
+            <a href="../html/lien-he.html">
+             LIÊN HỆ
+            </a>
+            <a href="../html/dang-nhap.html">
+             ĐĂNG NHẬP
+            </a>
+           </div>
+    
+
+        <!-- end::Header -->
+
+        <!-- begin::Body -->
+        <div class="m-grid__item m-grid__item--fluid  m-grid m-grid--ver-desktop m-grid--desktop
+                m-container m-container--responsive m-container--xxl m-page__container m-body">
+            <div class="m-grid__item m-grid__item--fluid m-wrapper">
+
+                <!-- BEGIN: Subheader -->
+                <!-- END: Subheader -->
+                <div class="m-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="product-slider">
+                
+                                                    <label class="sale-off">Giảm 30%</label>
+                                
+                                                    <div id="slide-main" class="slide-main owl-carousel owl-theme owl-loaded owl-drag">
+                                        <div class="owl-stage-outer">
+                                            <div class="owl-stage" style="width: 2226px; transform: translate3d(0px, 0px, 0px); transition: all;">
+                                                                                    <div class="owl-item active" style="width: 546.5px; margin-right: 10px;">
+                                                        <div class="slide-main_item item">
+                                                            <a href="../img/dong ho nam/dong-ho-nam-carvinal.jpg" data-lightbox="photos">
+                                                            <img style="cursor: pointer; opacity: 1;" data-src="/upload/img/2021/05/29/1622287954571_181951381_3886360388143842_5836775495483553959_n.jpg " class="owl-lazy" alt="Đồng Hồ Nam Tissot Luxury Automatic" title="Đồng Hồ Nam Tissot Luxury Automatic" src="../img/dong ho nam/dong-ho-nam-carvinal.jpg ">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                                                    <div class="owl-item" style="width: 546.5px; margin-right: 10px;">
+                                                        <div class="slide-main_item item">
+                                                            <a href="../img/dong ho nam/dong-ho-nam-carvinal.jpg" data-lightbox="photos">
+                                                            <img style="cursor: pointer" data-src="../img/dong ho nam/dong-ho-nam-tisot.jpg " class="owl-lazy" alt="Đồng Hồ Nam Tissot Luxury Automatic" title="Đồng Hồ Nam Tissot Luxury Automatic">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                                                    <div class="owl-item" style="width: 546.5px; margin-right: 10px;">
+                                                        <div class="slide-main_item item">
+                                                            <a href="../img/dong ho nam/dong-ho-nam-carvinal.jpg" data-lightbox="photos">
+                                                            <img style="cursor: pointer" data-src="../img/dong ho nam/dong-ho-nam-tisot.jpg" class="owl-lazy" alt="Đồng Hồ Nam Tissot Luxury Automatic" title="Đồng Hồ Nam Tissot Luxury Automatic">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                                                    <div class="owl-item" style="width: 546.5px; margin-right: 10px;">
+                                                        <div class="slide-main_item item">
+                                                            <a href="../img/dong ho nam/dong-ho-nam-carvinal.jpg" data-lightbox="photos">
+                                                            <img style="cursor: pointer" data-src="../img/dong ho nam/dong-ho-nam-tisot.jpg" class="owl-lazy" alt="Đồng Hồ Nam Tissot Luxury Automatic" title="Đồng Hồ Nam Tissot Luxury Automatic">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                                            </div>
+                                        </div>
+                                    <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot active" fdprocessedid="5myj2u"><span></span></button><button role="button" class="owl-dot" fdprocessedid="6r8gtl"><span></span></button><button role="button" class="owl-dot" fdprocessedid="h2cy4q"><span></span></button><button role="button" class="owl-dot" fdprocessedid="4cet3"><span></span></button></div></div>
+                
+                                    <div id="slide-thumb" class="slide-thumb owl-carousel owl-theme owl-loaded owl-drag">
+                                        <div class="owl-stage-outer">
+                                            <div class="owl-stage" style="width: 336px; transform: translate3d(0px, 0px, 0px); transition: all;">
+                                                                                    <div class="owl-item active synced" style="width: 73.975px; margin-right: 10px;">
+                                                        <div class="slide-thumb_item item">
+                                                            <img data-src="/upload/img/2021/05/29/1622287954571_181951381_3886360388143842_5836775495483553959_n.jpg " class="owl-lazy bk-product-image" alt="Đồng Hồ Nam Tissot Luxury Automatic" title="Đồng Hồ Nam Tissot Luxury Automatic" src="../img/dong ho nam/dong-ho-nam-carvinal.jpg" style="opacity: 1;">
+                                                        </div>
+                                                    </div>
+                                                                                    <div class="owl-item active" style="width: 73.975px; margin-right: 10px;">
+                                                        <div class="slide-thumb_item item">
+                                                            <img data-src="/upload/img/2021/05/29/1622287954569_180197520_3886360458143835_3751928277915732216_n.jpg " class="owl-lazy bk-product-image" alt="Đồng Hồ Nam Tissot Luxury Automatic" title="Đồng Hồ Nam Tissot Luxury Automatic" src="../img/dong ho nam/dong-ho-nam-carvinal.jpg" style="opacity: 1;">
+                                                        </div>
+                                                    </div>
+                                                                                    <div class="owl-item active" style="width: 73.975px; margin-right: 10px;">
+                                                        <div class="slide-thumb_item item">
+                                                            <img data-src="/upload/img/2021/05/29/1622287954572_182058902_3886360468143834_7870696960305586133_n.jpg " class="owl-lazy bk-product-image" alt="Đồng Hồ Nam Tissot Luxury Automatic" title="Đồng Hồ Nam Tissot Luxury Automatic" src="../img/dong ho nam/dong-ho-nam-carvinal.jpg" style="opacity: 1;">
+                                                        </div>
+                                                    </div>
+                                                                                    <div class="owl-item active" style="width: 73.975px; margin-right: 10px;">
+                                                        <div class="slide-thumb_item item">
+                                                            <img data-src="/upload/img/2021/05/29/1622287954572_182651724_3886360394810508_5459485676510606108_n.jpg " class="owl-lazy bk-product-image" alt="Đồng Hồ Nam Tissot Luxury Automatic" title="Đồng Hồ Nam Tissot Luxury Automatic" src="../img/dong ho nam/dong-ho-nam-carvinal.jpg" style="opacity: 1;">
+                                                        </div>
+                                                    </div>
+                                                                            </div>
+                                        </div>
+                                    <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next disabled"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+                                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-info">
+                                <table class="table table-product-info">
+                                    <tbody>
+                                                            <tr>
+                                            <td width="25%">Tên thương hiệu</td>
+                                            <td>CARNIVAL</td>
+                                        </tr>
+                                                        <tr>
+                                        <td width="25%%">Tên Sản phẩm</td>
+                                        <td class="bk-product-name">	Đồng Hồ Nam Carnival 40mm Nam 8113G-VH-DD-Nc</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="25%">Mã Sản phẩm</td>
+                                        <td class="m--font-golden font-weight-bold">	8113G-VH-DD-N</td>
+                                    </tr>
+                                                        </tbody>
+                                </table>
+                                <div class="m-section__content m--margin-top-20-desktop">
+                                    <div class="m-demo" data-code-preview="true" data-code-html="true" data-code-js="false">
+                                        <div class="m-demo__preview">
+                                            <table class="table table-product-price">
+                                                <tbody>
+                                                <tr>
+                                                    <td>Giá niêm yết</td>
+                                                    
+                                                                                            <td>	5.430.000 đ</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                        <td>Giá khuyến mại</td>
+                                                        <td><label class="m--font-danger bk-product-price">
+                                                            3.801.000 đ 
+                                                            </label>
+                                                            (-30%)
+                                                        </td>
+                                                    </tr>
+                                                                                    
+                                                        
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- BK BUTTON -->
+                                                        <div class="bk-btn"><div class="bk-btn-box"><button class="bk-btn-paynow" style="display: inline-block;background-color: #e90707 !important;color: #ffffff !important" type="button" fdprocessedid="bimt2g"><strong>Thanh toán qua Bảo Kim</strong><span>QR Code, Thẻ ATM, Thẻ Tín Dụng</span></button><button class="bk-btn-installment" style="display: inline-block;background-color: #288ad6 !important;color: #fff !important" type="button" fdprocessedid="c9x2ko"><strong>Trả góp qua thẻ</strong><span>Visa, Master, JCB</span></button><button class="bk-btn-installment-amigo" style="display: flex;background-color: #f1eb1f !important;color: #235d97 !important" type="button" fdprocessedid="js7tuj"><div class="bk-insta-content"><strong style="color: #235d97 !important">Mua ngay - trả sau</strong><span><img src="https://pc.baokim.vn/platform/img/home-paylater-ngang-small.svg" alt="" style="margin-left: 5px; height: 20px !important; border-radius: 0px !important;"></span></div></button></div></div>
+                                                        <!-- END BK BUTTON -->
+                                    </div>
+                                </div>
+                                <input type="hidden" value="1" class="bk-product-qty">
+                                <div class="m-section__content m--margin-top-30-desktop">
+                                    <div class="m-demo" data-code-preview="true" data-code-html="true" data-code-js="false">
+                                        <div class="m-demo__preview">
+                                            <h5 class="text-uppercase">Dịch vụ &amp; Khuyến mại liên quan</h5>
+                
+                                            <div>
+                                                <div style="color: rgb(33, 37, 41);"><p dir="ltr" style="margin-top: 0pt; margin-bottom: 12pt; line-height: 1.38;"><span style="font-size: 12pt; font-family: Muli; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">- Miễn phí vận chuyển</span></p><p dir="ltr" style="margin-top: 0pt; margin-bottom: 12pt; line-height: 1.38;"><span style="font-size: 12pt; font-family: Muli; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">- Bảo hành toàn hệ thống Đồng Hồ Phố 5 năm - Hỗ trợ bảo dưỡng lau dầu trọn đời máy</span></p><p dir="ltr" style="margin-top: 0pt; margin-bottom: 12pt; line-height: 1.38;"><span style="font-size: 12pt; font-family: Muli; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">- Hỗ trợ quay đầu lên đời sản phẩm mới</span></p><p dir="ltr" style="margin-top: 0pt; margin-bottom: 12pt; line-height: 1.38;"><span style="font-size: 12pt; font-family: Muli; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">- Hỗ trợ trả góp lãi suất 0% - Thủ tục nhanh gọn</span></p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row product-group-contact">
+                        <div class="col-md-6 text-center m--margin-bottom-20">
+                            <p>&nbsp;</p>
+                            <a style="font-size: 16px" href="#" class="btn btn-danger m-btn--custom m-btn m-btn--icon m-btn--pill m-btn--wide">
+                                <span>
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span class="font-weight-bold text-uppercase">Mua ngay</span>
+                                </span>
+                            </a>
+                
+                        </div>
+                
+                        <div class="col-md-6 text-center m--margin-bottom-20">
+                            <p class="font-weight-bold text-uppercase">Gọi ngay để tư vấn</p>
+                            <a href="#" class="btn btn-danger m-btn--custom m-btn m-btn--icon m-btn--pill m-btn--wide">
+                                <span>
+                                    <span class="font-weight-bold text-uppercase">Hotline: 0396 100 888</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                    <!-- SUBSCRIBE -->
+                    <div class="section-contact">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="m-portlet">
+                                    <div class="m-portlet__body m-portlet-subscriber">
+                                        <div class="section-contact-wrapper">
+                                            <div class="section-contact_title">Đăng ký để nhận ngay ưu đãi</div>
+
+                                            <form class="m-form m-form--fit m-form--label-align-right" id="frm_subscriber">
+                                                <div class="m-form__section">
+                                                    <div class="form-group m-form__group row">
+                                                        <div class="col-md-12 hidden-print">
+                                                            <div id="div_alert" class="alert alert-dismissible alert-danger" role="alert" style="display: none">
+                                                                <button id="btn_close" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            </button>
+                                                                <strong id="label_alert"></strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group m-form__group row" style="padding-top: 0">
+                                                        <div class="col-md-12">
+                                                            <div class="m-input-icon m-input-icon--left">
+                                                                <input type="text" class="form-control m-input" required id="subscriber_name" placeholder="Họ và tên của bạn">
+                                                                <span class="m-input-icon__icon m-input-icon__icon--left"><span><i
+                                                        class="fas fa-user"></i></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group row " style="padding-top: 0">
+                                                        <div class="col-md-12">
+                                                            <div class="m-input-icon m-input-icon--left">
+                                                                <input type="search" class="form-control m-input" required id="subscriber_phone" placeholder="Số điện thoại">
+                                                                <span class="m-input-icon__icon m-input-icon__icon--left"><span><i
+                                                        class="fas fa-phone"></i></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-form__group row " style="padding-top: 0">
+                                                        <div class="col-md-12">
+                                                            <div class="m-input-icon m-input-icon--left">
+                                                                <input type="email" class="form-control m-input" required id="subscriber_email" placeholder="Địa chỉ email của bạn">
+                                                                <span class="m-input-icon__icon m-input-icon__icon--left"><span><i
+                                                        class="fas fa-envelope"></i></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="m--align-center">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <button type="submit" class="btn btn-dongho text-uppercase" id="btn_subscriber">
+                                                Gửi
+                                            </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                            <div id="div_alert_success" class="alert alert-dismissible alert-success" role="alert" style="display: none">
+                                                <button id="btn_close" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            </button>
+                                                <strong id="label_alert_success"></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end::Body -->
+
+        <!-- begin::Footer -->
+        <footer class="m-grid__item">
+            <div class="m-portlet m-portlet--skin-black" style="margin-bottom: 0">
+                <div class="m-portlet__body  m-portlet__body--no-padding">
+                    <div class="row m-row--no-padding">
+                        <div class="col-md-4 col-sm-6 text-center">
+                            <div class="m-widget14">
+                                <div class="m-widget14__header" style="padding: 0">
+                                    <img style="width: 20%" src="/assets/img/logo.png">
+                                    <h3 class="m-widget14__title">
+                                        <label class="text-uppercase">Giá trị tạo niềm tin</label>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="m-widget14">
+                                <div class="m-widget14__header">
+                                    <h3 class="m-widget14__title">
+                                        <label class="section-footer-border text-uppercase">Showroom</label>
+                                    </h3>
+                                    <span class="m-widget14__desc">
+                                    <div>- Hà Nội:</div>
+                                    <div>100 Đường Láng - Đống Đa - Hà Nội</div>
+                                    <div>Điện thoại: 0396 100 555</div>
+                                     </span>
+                                    <br><br>
+                                    
+                                    <span class="m-widget14__desc ">
+                                    <div>- Hồ Chí Minh:</div>
+                                    <div>50 Quang Trung - Phường 10 - Quận Gò Vấp - Hồ Chí Minh</div>
+                                    <div>Điện thoại: 0396 100 999</div>
+                                </span>
+                                    <span class="m-widget14__desc m--margin-top-10">
+                                    Email: <a class="footer-email" href="mailto:ngocchau2004.mwg@gmail.com"> ngocchau2004.mwg@gmail.com</a>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="m-widget14">
+                                <div class="m-widget14__header">
+                                    <h3 class="m-widget14__title">
+                                        <label class="section-footer-border text-uppercase">Chính sách chung</label>
+                                    </h3>
+                                    <span class="m-widget14__desc">
+                                    <a href="../html/gioi-thieu.html"
+                                       class="m-widget14__details">- Giới thiệu</a>
+                                    <a href="../html/lien-he.html"
+                                       class="m-widget14__details">- Liên hệ</a>
+                                    
+                                </span>
+
+                                    <h3 class="m-widget14__title m--margin-top-50">
+                                        <label class="section-footer-border text-uppercase">Sửa chữa</label>
+                                    </h3>
+                                    <span class="m-widget14__desc">
+                                    <span class="m-widget14__details">Hotline: 0396 100 555</span>
+                                    </span>
+
+                                    <h3 class="m-widget14__title m--margin-top-50">
+                                        <label class="section-footer-border text-uppercase">Kết nối với chúng tôi</label>
+                                    </h3>
+                                    <span class="m-widget14__desc">
+                                    <span class="m-widget14__details">
+                                        <a href="#" target="_blank">
+                                            <img class="connect-us-icon" src="/assets/img/social/facebook.png">
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <img class="connect-us-icon" src="/assets/img/social/youtube.png">
+                                        </a>
+										<a href="#" target="_blank">
+                                            <img class="connect-us-icon" src="/assets/img/social/tiktok.png">
+                                        </a>
+										<a href="#" target="_blank">
+                                            <img class="connect-us-icon" src="/assets/img/social/instagram.png">
+                                        </a>
+                                    </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row m-row--no-padding m--margin-top-5 ">
+                        <div class="col-md-12 text-center">
+                            <div class="m-widget14">
+                                <div class="m-widget14__header">
+                                    <h3 class="m-widget14__title">
+                                        <label class="section-footer-border text-uppercase">CHÍNH SÁCH BẢO HÀNH VÀ ĐỔI TRẢ</label>
+                                    </h3>
+                                    <span class="m-widget14__desc">
+									<div>Đổi trả trong 7 ngày nếu sản phẩm còn nguyên tem, chưa qua sử dụng.</div>
+									<div>Bảo hành 12 tháng cho lỗi kỹ thuật của nhà sản xuất.</div>
+									<div>Liên hệ CSKH: 0901234567 hoặc support@example.com</div>
+				
+								</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-row--no-padding m--margin-top-10 ">
+                        <div class="col-md-12 text-center">
+                            <h6 style="color: white" class="font-weight-bold m--margin-bottom-10">COPYRIGHT © NGỌC CHÂU</h6>
+                            <p class="m-widget14__desc">
+                                <img class="payment-icon" src="/frontend/assets/app/media/img/icons/visa.svg" width="50" alt="">
+                                <img class="payment-icon" src="/frontend/assets/app/media/img/icons/mastercard.svg" width="50" alt="">
+                                <img class="payment-icon" src="/frontend/assets/app/media/img/icons/cash.svg" width="50" alt="">
+                                <img class="payment-icon" src="/frontend/assets/app/media/img/icons/internet-banking.svg" width="50" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- end::Footer -->
+    </div>
+
+    <!-- end:: Page -->
+
+    <!-- begin::Scroll Top -->
+    <div id="m_scroll_top" class="m-scroll-top">
+        <i class="la la-arrow-up"></i>
+    </div>
+
+    <!-- end::Scroll Top -->
+
+    <!-- begin::Quick Nav -->
+    <div class="lw-social show">
+        <div class="lw-social_wrapper">
+
+
+            <a href="#" class="lw-social__btn lw-social__btn--zalo" onclick="ga('send', 'event', 'Liên hệ ', 'Chat', 'Zalo',{'nonInteraction': 1})">
+
+            <span class="bg"></span>
+            <span>Zalo</span>
+        </a>
+            <a href="#" class="lw-social__btn lw-social__btn--mess" onclick="ga('send', 'event', 'Liên hệ ', 'Chat', 'FB',{'nonInteraction': 1})">
+
+            <span class="bg"></span>
+            <span>Messenger</span>
+        </a>
+
+            <a href="#" class="lw-social__btn lw-social__btn--call" onclick="ga('send', 'event', 'Liên hệ ', 'Call', 'Button Side',{'nonInteraction': 1})">
+
+            <span class="bg"></span>
+            <span>Gọi ngay</span>
+        </a>
+        </div>
+    </div>
+
+    <!-- begin::Quick Nav -->
+
+    <!--begin:: Global Mandatory Vendors -->
+    <script src="/frontend/vendors/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/popper.js/dist/umd/popper.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/js-cookie/src/js.cookie.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/tooltip.js/dist/umd/tooltip.min.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/perfect-scrollbar/dist/perfect-scrollbar.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/wnumb/wNumb.js" type="text/javascript"></script>
+
+    <!--end:: Global Mandatory Vendors -->
+
+    <!--begin:: Global Optional Vendors -->
+    <script src="/frontend/vendors/jquery.repeater/src/lib.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/jquery.repeater/src/jquery.input.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/jquery.repeater/src/repeater.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/jquery-form/dist/jquery.form.min.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/block-ui/jquery.blockUI.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/nouislider/distribute/nouislider.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/owl.carousel/dist/owl.carousel.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/autosize/dist/autosize.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/jquery-validation/dist/jquery.validate.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/jquery-validation/dist/additional-methods.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/js/framework/components/plugins/forms/jquery-validation.init.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/bootstrap-notify/bootstrap-notify.min.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/toastr/build/toastr.min.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/raphael/raphael.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/vendors/jquery-idletimer/idle-timer.min.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/waypoints/lib/jquery.waypoints.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/es6-promise-polyfill/promise.min.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/sweetalert2/dist/sweetalert2.min.js" type="text/javascript"></script>
+    <script src="/frontend/vendors/js/framework/components/plugins/base/sweetalert2.init.js" type="text/javascript"></script>
+
+    <!--end:: Global Optional Vendors -->
+
+    <!--begin::Global Theme Bundle -->
+    <script src="/frontend/assets/demo/base/scripts.bundle.js" type="text/javascript"></script>
+
+    <!--end::Global Theme Bundle -->
+
+    <!--begin::Page Vendors -->
+
+    <!--end::Page Vendors -->
+
+    <!--begin::Page Scripts -->
+    <script>
+        (function($) {
+            $(document).ready(function() {
+                var productPromo = new Swiper('.swiper-container.swiper-products-promo', {
+                    slidesPerView: 5,
+                    slidesPerGroup: 1,
+                    spaceBetween: 5,
+                    updateOnWindowResize: true,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 2,
+                            // slidesPerGroup: 2,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            // slidesPerGroup: 3,
+                        },
+                        1024: {
+                            slidesPerView: 4,
+                            // slidesPerGroup: 4,
+                        },
+                        1200: {
+                            slidesPerView: 5,
+                            // slidesPerGroup: 5,
+                        },
+                    }
+                });
+            });
+
+            var homeCategory = new Swiper('.swiper-container.swiper-brand', {
+                slidesPerView: 3,
+                slidesPerGroup: 1,
+                spaceBetween: 30,
+                updateOnWindowResize: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    320: {
+                        // slidesPerView: 2,
+                        // slidesPerGroup: 2,
+                        spaceBetween: 5
+                    },
+                    768: {
+                        // slidesPerView: 4,
+                        // slidesPerGroup: 4,
+                        spaceBetween: 10,
+                    },
+                    1024: {
+                        // slidesPerView: 5,
+                        // slidesPerGroup: 5,
+                    },
+                    1200: {
+                        slidesPerView: 6,
+                        // slidesPerGroup: 6,
+                    },
+                },
+            });
+
+            lazyLoad();
+            setTimeout(function() {
+                window.addEventListener('scroll', lazyLoad);
+                // window.addEventListener('resize',lazyLoad);
+                window.addEventListener('load', lazyLoad);
+            }, 200);
+
+            $('#search_box').on('keyup change', function(e) {
+                let filter, brand_box, item, a, i, txtValue;
+                filter = $(this).val().trim().toUpperCase();
+                brand_box = document.getElementById("brand_box");
+                item = brand_box.getElementsByTagName("input");
+                for (i = 0; i < item.length; i++) {
+                    txtValue = item[i].getAttribute("data-name").trim();
+                    txtValue = txtValue.toUpperCase();
+                    let parent = item[i].parentElement;
+                    console.log(parent);
+                    if (txtValue.includes(filter)) {
+                        parent.style.display = "";
+                    } else {
+                        parent.style.display = "none";
+                    }
+                }
+            });
+
+            $('#btn_subscriber').click(function(e) {
+                e.preventDefault();
+                let email = $('#subscriber_email').val().trim();
+                let name = $('#subscriber_name').val().trim();
+                let phone = $('#subscriber_phone').val().trim();
+
+                let div = $('#div_alert');
+                let label = $('#label_alert');
+
+                if (email === '' || name === '' || phone === '') {
+                    label.html('Vui lòng nhập đầy đủ thông tin.');
+                    div.show();
+                } else {
+                    $.ajax({
+                        url: "https://donghopho.vn/customer/subscribe",
+                        type: 'post',
+                        data: {
+                            _token: $('meta[name="csrf-token"]').attr('content'),
+                            name: name !== null ? name : '',
+                            email: email !== null ? email : '',
+                            phone: phone !== null ? phone : ''
+                        },
+                        success: function(response) {
+                            // console.log(response);
+                            if (response.is_error === 0) {
+                                label.html('');
+                                div.hide();
+
+                                $('#frm_subscriber').hide('slow', function() {
+                                    $('#label_alert_success').html(response.message);
+                                    $('#div_alert_success').show('fast');
+                                });
+                            } else {
+                                div.show();
+                                label.html(response.message);
+                            }
+                        }
+                    });
+                }
+            });
+
+            let intViewportWidth = window.innerWidth;
+            if (intViewportWidth >= 1025) {
+                $('.m-menu__brands-parent').removeClass('m-menu__toggle');
+            }
+        })(window.jQuery);
+
+        // lazy load init
+        function lazyLoad() {
+            let lazyImages = $('.lazy-image').toArray(),
+                inAdvance = 250;
+            lazyImages.forEach(function(image, index) {
+                let value = $(image);
+                if (value && value.offset().top <= window.innerHeight + window.pageYOffset + inAdvance && value.offset().top > window.pageYOffset - inAdvance) {
+                    image.src = image.dataset.src;
+                    // value.removeClass('lazy-image');
+                    // image.onload = () => image.classList.add('loaded');
+
+                    image.onload = function() {
+                        $(this).removeClass('lazy-image').removeAttr('style').addClass('loaded').removeData().parent().find('.loading__image').fadeOut(300).delay(300).remove();
+                    };
+
+                    delete lazyImages[index];
+                    value.off('scroll load');
+                }
+            });
+        }
+    </script>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container.swiper-banner', {
+            autoplay: {
+                delay: 5000,
+            },
+            updateOnWindowResize: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // autoHeight: true
+        });
+
+        var collectionSwiper = new Swiper('.swiper-container.swiper-collection', {
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            slidesPerGroup: 2,
+            // spaceBetween: 20,
+            updateOnWindowResize: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // breakpoints: {
+            //     320: {
+            //         spaceBetween: 5,
+            //         slidesPerView: 2,
+            //     },
+            //     414: {
+            //         spaceBetween: 5,
+            //         slidesPerView: 3,
+            //     },
+            //     768: {
+            //         slidesPerView: 4,
+            //     }
+            // },
+        });
+    </script>
+
+    <script>
+        window.onload = function() {
+    displayUserInfo();
+
+    // Gán sự kiện đăng xuất cho nút Đăng xuất
+    document.getElementById('logout-btn').addEventListener('click', logout);
+
+    // Gán sự kiện mở modal cho icon user
+    document.getElementById('user-name').addEventListener('click', openUserModal);
+};
+
+// Hàm hiển thị tên người dùng bên cạnh icon user
+function displayUserInfo() {
+    const userInfo = JSON.parse(localStorage.getItem('userInfo')); // Lấy thông tin người dùng từ localStorage
+    const usernameDisplay = document.createElement('span'); // Tạo phần tử để hiển thị tên
+    usernameDisplay.id = 'user-name-display'; // Gán ID cho phần tử
+
+    const userIconContainer = document.getElementById('user-name').parentElement; // Lấy container chứa icon user
+
+    // Kiểm tra nếu tên người dùng đã có, thì hiển thị tên bên cạnh icon user
+    if (userInfo && userInfo.username) {
+        usernameDisplay.textContent = " " + userInfo.username; // Hiển thị tên người dùng với khoảng trắng
+        userIconContainer.appendChild(usernameDisplay); // Thêm phần tử vào bên cạnh icon user
+    } else {
+        // Nếu không có thông tin đăng nhập, xóa nội dung hiển thị tên người dùng
+        if (document.getElementById('user-name-display')) {
+            document.getElementById('user-name-display').remove();
+        }
+    }
+}
+
+// Hàm mở modal hiển thị thông tin người dùng
+function openUserModal() {
+    const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+    if (userInfo) {
+        // Tạo nội dung hiển thị trong modal với thông tin người dùng
+        const modalContent = `
+            <div class="modal fade" id="userModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Thông Tin Người Dùng</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Họ Tên:</strong> ${userInfo.username}</p>
+                            <p><strong>Email:</strong> ${userInfo.email}</p>
+                            <p><strong>Số Điện Thoại:</strong> ${userInfo.phone}</p>
+                            <p><strong>Ngày Tạo:</strong> ${userInfo.createdAt}</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+        
+        // Thêm modal vào cuối trang
+        document.body.insertAdjacentHTML('beforeend', modalContent);
+        
+        // Hiển thị modal
+        $('#userModal').modal('show');
+
+        // Xóa modal khỏi DOM sau khi đóng
+        $('#userModal').on('hidden.bs.modal', function () {
+            $(this).remove();
+        });
+    }
+}
+
+// Hàm đăng xuất
+function logout() {
+    localStorage.removeItem('userInfo'); // Xóa thông tin người dùng khỏi localStorage
+    displayUserInfo(); // Cập nhật lại giao diện
+}
+
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
+
+</body>
+
+<!-- end::Body -->
+</html>
